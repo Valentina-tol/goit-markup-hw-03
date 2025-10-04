@@ -8,22 +8,100 @@
 
 /* Base */
 body {
-  margin: 0;
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
-
+/* reset */
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  color: currentColor;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+addres {
+  font-style: ormal
+}
+
+img {
+  display: block;
+}
+
+/* common */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+}
+
+.section {
+padding: 60px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.accent-text {
+  color: var(--cl-accent);
+}
+
+.conainer {
+  max-width: 1158px;
+  padding: 0 16px;
+  margin: 0 auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
 /* #region Header */
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;}
+ 
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -44,6 +122,12 @@ a {
   color: #4d5ae5;
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
+
 .header-logo .logo-part {
   color: #2e2f42;
 }
@@ -52,7 +136,15 @@ a {
   color: #f4f4fd;
 }
 
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .nav-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -62,9 +154,18 @@ a {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -81,12 +182,19 @@ a {
 
 /* #region Hero section */
 .hero {
-  background-color: #2e2f42;
-  text-align: center;
+padding-bottom: 120px;
 }
 
+.hero-container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 188px 472px 292px;
+  background-color: #2e2f42;
+  text-align: center;
+ }
+
 .hero-title {
-  margin: 120px 0 24px;
+  width: 496px; 
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -96,6 +204,7 @@ a {
 }
 
 .btn {
+  margin-top: 48px;
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
