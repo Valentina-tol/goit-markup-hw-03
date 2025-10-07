@@ -186,7 +186,7 @@ img {
 }
 
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto 48px;
   font-size: 56px;
   line-height: 1.07;
@@ -195,8 +195,9 @@ img {
 }
 
 .btn {
-  display: inline-block;
+  display: block;
   padding: 16px 32px;
+  min-width: 169px;
   background-color: #4d5ae5;
   font-weight: 500;
   line-height: 1.5;
@@ -204,6 +205,7 @@ img {
   color: #ffffff;
   border-radius: 4px;
   border: none; 
+  margin: 0 auto;
 }
 
 .btn:hover,
@@ -287,6 +289,10 @@ img {
   color: #434455;
 }
 
+.team-list > li:first-child {
+  border-radius: 0 0 4px 4px; 
+  overflow: hidden; 
+}
 /* #endregion */
 
 /* #region Portfolio */
@@ -329,7 +335,7 @@ img {
 .page-footer {
   background-color: #2e2f42;
   color: #f4f4fd;
-  padding: 100px;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -347,3 +353,4 @@ img {
   overflow-wrap: break-word;
 }
 /* #endregion */
+
